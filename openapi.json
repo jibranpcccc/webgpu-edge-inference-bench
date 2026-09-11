@@ -1,0 +1,55 @@
+{
+  "openapi": "3.1.0",
+  "info": {
+    "title": "EdgeRuntimeHQ - WebGPU vs ONNX Runtime In-Browser AI Latency API",
+    "description": "Time-to-first-token (TTFT) and token throughput benchmarks for local AI runtimes API. Official production documentation hosted at https://edgeruntimehq.pages.dev/",
+    "version": "1.1.0",
+    "contact": {
+      "name": "EdgeRuntimeHQ Architecture Team",
+      "url": "https://edgeruntimehq.pages.dev/"
+    }
+  },
+  "servers": [
+    {
+      "url": "https://edgeruntimehq.pages.dev",
+      "description": "Production Web Application Gateway"
+    }
+  ],
+  "paths": {
+    "/api/v1/runtime-bench": {
+      "get": {
+        "summary": "Retrieve real-time edge runtime throughput and memory usage metrics",
+        "description": "Executes the empirical calculations and data models for EdgeRuntimeHQ.",
+        "responses": {
+          "200": {
+            "description": "Successful calculation response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "status": {
+                      "type": "string",
+                      "example": "ok"
+                    },
+                    "timestamp": {
+                      "type": "string",
+                      "format": "date-time"
+                    },
+                    "site_url": {
+                      "type": "string",
+                      "example": "https://edgeruntimehq.pages.dev/"
+                    },
+                    "data": {
+                      "type": "object"
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

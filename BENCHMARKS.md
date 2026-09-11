@@ -14,3 +14,13 @@ Empirical Time-To-First-Token (TTFT), tokens/second throughput, and memory consu
 
 ---
 Maintained by [EdgeRuntimeHQ](https://edgeruntimehq.pages.dev/).
+
+## 📚 In-Depth Technical Implementation Guides
+
+| Target Engineering Query | Production Reference & Guide URL |
+| :--- | :--- |
+| **Webgpu Vs Wasm Llm Inference Benchmark** | [https://edgeruntimehq.pages.dev/webgpu-vs-wasm-in-browser-llm-inference-benchmarks/](https://edgeruntimehq.pages.dev/webgpu-vs-wasm-in-browser-llm-inference-benchmarks/) |
+| **Onnx Runtime Vs Tensorrt Edge Latency** | [https://edgeruntimehq.pages.dev/onnx-runtime-vs-tensorrt-edge-server-latency/](https://edgeruntimehq.pages.dev/onnx-runtime-vs-tensorrt-edge-server-latency/) |
+| **Webgpu Fp16 Vs Fp32 Browser Inference Speed** | [https://edgeruntimehq.pages.dev/webgpu-fp16-vs-fp32-benchmark/](https://edgeruntimehq.pages.dev/webgpu-fp16-vs-fp32-benchmark/) |
+| **Smollm2 360M Webgpu Memory Footprint** | [https://edgeruntimehq.pages.dev/smollm2-360m-webgpu-guide/](https://edgeruntimehq.pages.dev/smollm2-360m-webgpu-guide/) |
+
